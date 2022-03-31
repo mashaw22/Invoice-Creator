@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* =====Custom properties====== */
+
+:root {
+    --fw-reg: 400;
+    --fw-med: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+
+    --clr-light: ;
+    --clr-dark: #1F2937;
+    --clr-accent: #3A69D2;
+}
+/* =====General Styles===== */
+
+body {
+    margin: 0;
+    background-color: #D1D4F4;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--fs-body);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+img {
+    display: block;
+}
+
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+.btn {
+    display: inline-block;
+
+    border: none;
+    border-radius: 7px;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn-wash-car,
+.btn-mow-lawn,
+.btn-pull-weeds {
+    background: #D1D4F4;
+    color: #4A4E74;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 16px;
+    padding: .643em .929em;
+}
+
+.btn:hover {
+    transform: scale(1.1)
+}
+
+/* =====Typography===== */
+h1 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    font-weight: var(--fw-extra-bold);
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-top: .5em auto 0;
+}
+
+.invoice-subtitles-1,
+.invoice-subtitles-2 {
+    font-size: .75rem;
+    color: #D5D4D8;
+    text-transform: uppercase;
+}
+
+.invoice-subtitles-1 {
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.invoice-subtitles-2 {
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.invoice-subtitles-2 p {
+    margin: 0;
+}
+
+.note-info {
+    color: #F5F5F5;
+    font-weight: 400;
+    font-size: .75rem;
+}
+
+.total-cost {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #F5F5F5;
+    margin: 0;
+
+}
+
+.btn-send-invoice {
+    background-color: var(--clr-accent);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.send-invoice__img {
+    max-width: 1rem;;
+    margin-right: .875em;
+    align-self: center;
+}
+
+.service-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #F5F5F5;
+}
+
+.service-cost {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.light-accent {
+    color: #918E9B;
+}
+
+/* =====Layout===== */
+
+/* Header */
+.header {
+    background: var(--clr-accent);
+}
+
+/* Main */
+
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice-info {
+    width: 100%;
+}
+
+.btn-section{
+    margin-bottom: 1em;
+}
+
+.services {
+    margin-top: 1.5em;
+    border-bottom: 1px solid #C3C6DB;
+}
+
+.invoice-subtitles-2 {
+    margin: .6875em 0; 
+}
+.payment-info {
+    margin-bottom: 3.125em;
+}
+
+.services {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-name {
+    align-self: center;
+}

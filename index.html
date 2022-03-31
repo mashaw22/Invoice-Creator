@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Creator</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container header">
+        <h1 class="title">Invoice Creator</h1>
+        <p class="subtitle">Thanks for choosing GoodCorp, LLC!</p>
+    </header>
+
+    <main class="container main">
+        <div class="btn-section flex">
+            <button id="btn-wash-car" class="btn btn-wash-car">Wash Car: $10</button>
+            <button id="btn-mow-lawn" class="btn btn-mow-lawn">Mow Lawn: $20</button>
+            <button id="btn-pull-weeds" class="btn btn-pull-weeds">Pull Weeds: $30</button>
+        </div>
+
+        <section class="invoice-info">
+            <div class="invoice-subtitles-1 flex">
+                <p>Task</p>
+                <p>Total</p>
+            </div>
+            <div class="services flex" id="services"></div>
+            <div class="invoice-subtitles-2 flex">
+                <p>Notes</p>
+                <p>Total Amount</p>
+            </div>
+            <div class="payment-info flex">
+                <p class="note-info" id="note-info"></p>
+                <h2 class="total-cost" id="total-cost">$0</h2>
+            </div>
+        </section>
+
+        <button class="btn btn-send-invoice" id="btn-send-invoice">
+            <img class="send-invoice__img" src="img/mail.png">
+            <p>Send Invoice</p>
+        </button>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
